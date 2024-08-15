@@ -4,7 +4,7 @@ SELECT vendedores.ID_VENDEDOR AS id, vendedores.NOME AS nome, vendedores.SALARIO
 FROM vendedores 
 WHERE vendedores.INATIVO = false ORDER BY vendedores.NOME ASC;
 
-//TAREFA2
+//TAREFA 2
 SELECT vendedores.ID_VENDEDOR AS id, vendedores.NOME AS nome, vendedores.SALARIO AS salario
 FROM vendedores 
 WHERE vendedores.salario > (SELECT AVG(salario) FROM vendedores )
